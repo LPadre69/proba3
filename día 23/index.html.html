@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Personas</title>
+    <link href="dia23.css" rel="stylesheet"/>
+</head>
+<body onload="mostrarPersonas()">
+    <div id="cabecero" class="contenedor">
+        <h1>Lista de mmhvardos</h1>
+    </div>
+<div class="main-container">
+    <div class="column-left">
+     <div class="contenido">
+        <div class="elemento">
+            <ul id="personas"></ul>
+        </div>
+    </div>
+    <div class="contenido">
+        <div style="text-align: center">
+            <button style="cursor: pointer" onclick="agregarPersona()" class="agrigs">+</button>
+        </div>
+        <form id="forma">
+            <input type="text" id="nombre" placeholder="Nombre"/>
+            <input type="text" id="apellido" placeholder="Apellido"/>
+        </form>
+     
+    </div>
+</div> 
+<div class="column-right">
+    <h1 class="counter tt">Calculanding...</h1>
+
+       <div class="counter">
+        <form id="formulario">
+         <div class="mb-3">
+            <label for="operandoA"> OperandoA</label> <!--por que el lble?-->
+            <input type="number"  id="operandoA" placeholder="Escribe un operador A" class="intentobs"/>
+         </div>
+           <div class="mb-3">
+            <label for="operandoB">OperandoB</label> 
+            <input type="number"  id="operandoB" placeholder="Escribe un operador B" class="intentobs"/>
+           </div>
+        </form>
+        <div class="operadores">
+           <button onclick="suma()" >Sumar</button>
+           <button onclick="resta()" >Restar</button>
+           <button onclick="multiplicar()">Multipli</button>
+           <button onclick="dividir()">Dividir</button>
+        </div>
+
+<!--type submit para enviar la info a un servidor, se recarga la pag-->
+         <div id="respuesta"></div>
+
+       </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="probs.js"></script>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
